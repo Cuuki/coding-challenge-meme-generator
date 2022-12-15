@@ -16,13 +16,16 @@
     "autoprefixer": "^10.4.13",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.7",
+    "konva": "^8.3.14",
     "next": "13.0.7",
     "postcss": "^8.4.20",
     "prettier": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-konva": "^18.2.3",
     "tailwindcss": "^3.2.4",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "use-image": "^1.1.0"
   },
   "engines": {
     "node": "18.12"
