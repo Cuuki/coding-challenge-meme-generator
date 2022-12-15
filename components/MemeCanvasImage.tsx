@@ -1,7 +1,7 @@
 'use client';
 
 import type { ComponentPropsWithoutRef } from 'react';
-import { Image } from 'react-konva';
+import { Image as KonvaImage } from 'react-konva';
 import useImage from 'use-image';
 
 type MemeCanvasImageProps = {
@@ -10,7 +10,7 @@ type MemeCanvasImageProps = {
   y: number;
   width?: number;
   height?: number;
-} & ComponentPropsWithoutRef<typeof Image>;
+} & ComponentPropsWithoutRef<typeof KonvaImage>;
 
 export const MemeCanvasImage = ({
   imageUrl,
@@ -22,5 +22,5 @@ export const MemeCanvasImage = ({
 }: MemeCanvasImageProps) => {
   const [image] = useImage(imageUrl);
 
-  return <Image image={image} x={x} y={y} width={width} height={height} {...rest} />;
+  return <KonvaImage image={image} x={x} y={y} width={width} height={height} {...rest} />;
 };

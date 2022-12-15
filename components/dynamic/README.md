@@ -2,7 +2,7 @@
 
 **Dynamic / lazy components imported with `next/dynamic` need to have a default export.**
 
-Since named exports are more ergonomic to only name one benefit this folder acts as re-export for the components that need to be imported dynamically i.E. `react-konva`.
+Since named exports are more ergonomic (to only name one benefit of named exports) this folder acts as re-export for the components that need to be imported dynamically i.E. `react-konva`.
 
 **Read more:**
 
