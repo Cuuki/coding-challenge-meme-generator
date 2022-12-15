@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import { useDeferredValue, useRef, useState } from 'react';
-import { FormLabel } from './FormLabel';
+import { InputGroup } from './InputGroup';
 import { TextInput } from './TextInput';
 import { Button } from './Button';
 
@@ -72,18 +72,18 @@ export const MemeGeneratorForm = () => {
           setCaptionBottom('');
         }}
       >
-        <FormLabel text="Caption top">
+        <InputGroup label="Caption top">
           <TextInput
             value={captionTop}
             onChange={(event) => setCaptionTop(event.currentTarget.value)}
           />
-        </FormLabel>
-        <FormLabel text="Caption bottom">
+        </InputGroup>
+        <InputGroup label="Caption bottom">
           <TextInput
             value={captionBottom}
             onChange={(event) => setCaptionBottom(event.currentTarget.value)}
           />
-        </FormLabel>
+        </InputGroup>
 
         <Button variant="success" type="submit">
           Save meme
